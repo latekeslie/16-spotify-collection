@@ -1,9 +1,11 @@
 <template lang="html">
   <div class="panel">
-    <input type="text" name="" value="">
+    <header class="">
+    </header>
     <ul class="results">
       <song-item v-for="item in tracks" v-bind:track="item"></song-item>
     </ul>
+
 
   </div>
 </template>

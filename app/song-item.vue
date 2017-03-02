@@ -1,7 +1,7 @@
 <template lang="html">
   <li class="track">
-    <img src="" alt="" class="track__frame">
-    <h3 class="track__artist"> {{ track.artist }} </h3>
+    <img src="{{ track.preview_url }}" alt="" class="track__frame">
+    <h3 class="track__artist"> {{ track.artists[0].name }} </h3>
     <p class="track__name"> {{ track.name }} </p>
 
   </li>
