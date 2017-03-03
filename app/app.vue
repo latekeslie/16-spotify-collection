@@ -1,12 +1,9 @@
 <template lang="html">
-  <div class="panel">
-    <header class="">
-    </header>
+  <div class="panel section">
+    <div class="panel-heading">Heeeey</div>
     <ul class="results">
       <song-item v-for="item in tracks" v-bind:track="item"></song-item>
     </ul>
-
-
   </div>
 </template>
 
@@ -14,7 +11,7 @@
 import SongItem from './song-item.vue';
 export default {
   components: {
-    SongItem
+    SongItem,
   },
   created() {
     fetch(`https://api.spotify.com/v1/search?query=katy&type=track&offset=0&limit=20`)

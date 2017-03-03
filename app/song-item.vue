@@ -1,18 +1,28 @@
 <template lang="html">
-  <li class="track">
-    <img src="{{ track.preview_url }}" alt="" class="track__frame">
-    <h3 class="track__artist"> {{ track.artists[0].name }} </h3>
-    <p class="track__name"> {{ track.name }} </p>
+  <div class="SongItem">
+    <div class="panel-block">
+      <div class="media is-fullwidth">
+        <div class="media-left">
+          <img v-bind:src="track.album.images[0].url" alt="" class="track__frame">
+        </div>
 
-  </li>
+        <li class="media-content track">
+          <h3 class="track__artist">{{ track.artists[0].name }}</h3>
+          <p class="track__name">{{ track.name }}</p>
+        </li>
+        <div class="media-right">
+          <span class="fa fa-spotify"></span>
+        </div>
+      </div>
+    </div>
+  </div>
 </template>
 
 <script>
 export default {
   props: ['track'],
   data() {
-    return {
-    };
+    return {};
   },
 
   methods: {
