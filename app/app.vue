@@ -14,7 +14,7 @@ export default {
     SongItem,
   },
   created() {
-    fetch(`https://api.spotify.com/v1/search?query=katy&type=track&offset=0&limit=20`)
+    fetch(`https://api.spotify.com/v1/search?query=old+crow+medicine+show&type=track&offset=0&limit=20`)
       .then(r => r.json())
       .then((data) => {
         this.tracks = data.tracks.items

@@ -11,7 +11,7 @@
           <p class="track__name">{{ track.name }}</p>
         </li>
         <div class="media-right">
-          <span class="fa fa-spotify"></span>
+          <a v-bind:href="track.external_urls.spotify"><span class="icon is-large fa fa-spotify"></span></a>
         </div>
       </div>
     </div>
