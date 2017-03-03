@@ -1,6 +1,7 @@
 // @import 'yoga';
 // @import 'normalize';
 
+
 // $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
 // @import 'font-awesome';
 @import 'box-sizing';
@@ -59,4 +60,8 @@ $white: hsl(0, 0%, 21%);
 
     color: #fff;
   }
+}
+
+.media.is-fullwidth {
+  width: 100%;
 }
